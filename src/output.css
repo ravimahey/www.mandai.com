@@ -534,6 +534,9 @@
   .overflow-visible {
     overflow: visible;
   }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
   .overflow-x-visible {
     overflow-x: visible;
   }
