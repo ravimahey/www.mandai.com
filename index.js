@@ -105,14 +105,39 @@ const toggleDropDown = (elementId) => {
 		element.classList.remove('hidden');
 		element.classList.add('flex');
 	}else{
-		element.classList.remove('flex');
-		element.classList.add('hidden')
+		setTimeout(() => {
+			if (!onPlane){
+				element.classList.remove('flex');
+				element.classList.add('hidden');
+			}
+				
+		}, 1000);
 	}
 };
 
 const navDropDown = document.querySelectorAll(".nav-dropdown-item");
+
 navDropDown.forEach((element) => {
 	element.addEventListener("mouseover", () => {
 		toggleDropDown('nav-dropdown-1');
+	});
+	element.addEventListener("mouseout", () => {
+		console.log("OUT");
+		toggleDropDown('nav-dropdown-1');
+	});
+});
+
+const navDropDownPanel = document.querySelectorAll("#nav-dropdown-1");
+let onPlane = false; 
+navDropDownPanel.forEach((element) => {
+	element.addEventListener("mouseover", () => {
+		toggleDropDown('nav-dropdown-1');
+		onPlane=true;
+	});
+	element.addEventListener("mouseout", () => {
+		console.log("OUT");
+		onPlane= false;
+		toggleDropDown('nav-dropdown-1');
+
 	});
 });
