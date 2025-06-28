@@ -969,6 +969,11 @@
       width: calc(6/122 * 100%);
     }
   }
+  .sm\:w-7\/12 {
+    @media (width >= 40rem) {
+      width: calc(7/12 * 100%);
+    }
+  }
   .sm\:w-8 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 8);
@@ -1344,6 +1349,21 @@
   .xl\:w-100 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 100);
+    }
+  }
+  .xl\:max-w-6\/12 {
+    @media (width >= 80rem) {
+      max-width: calc(6/12 * 100%);
+    }
+  }
+  .xl\:max-w-7\/12 {
+    @media (width >= 80rem) {
+      max-width: calc(7/12 * 100%);
+    }
+  }
+  .xl\:min-w-6\/12 {
+    @media (width >= 80rem) {
+      min-width: calc(6/12 * 100%);
     }
   }
 }
