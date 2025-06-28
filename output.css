@@ -43,7 +43,6 @@
     --default-mono-font-family: var(--font-mono);
     --color-light-1: #faf5e8;
     --color-light-2: #faeacd;
-    --color-sky-light: #f2f2f2;
     --color-gray-light-1: #55574b;
     --color-yellow-c: #ffcc00;
     --color-green-c: #003300;
@@ -616,9 +615,6 @@
   .bg-\[url\(\.\.\/assets\/mobile-image\.png\)\] {
     background-image: url(../assets/mobile-image.png);
   }
-  .bg-\[url\(\.\/assets\/mobile-image\.png\)\] {
-    background-image: url(./assets/mobile-image.png);
-  }
   .to-100\% {
     --tw-gradient-to-position: 100%;
   }
@@ -1079,11 +1075,6 @@
   .sm\:bg-\[url\(\.\.\/assets\/mobile-image\)\] {
     @media (width >= 40rem) {
       background-image: url(../assets/mobile-image);
-    }
-  }
-  .sm\:bg-\[url\(\.\/assets\/jungle\.png\)\] {
-    @media (width >= 40rem) {
-      background-image: url(./assets/jungle.png);
     }
   }
   .sm\:px-0 {
