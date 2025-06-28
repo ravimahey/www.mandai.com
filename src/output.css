@@ -622,6 +622,18 @@
   .bg-\[url\(\.\/assets\/mobile-image\.png\)\] {
     background-image: url(./assets/mobile-image.png);
   }
+  .bg-\[url\(\.\/assets\/mobile-image\.pngg\)\] {
+    background-image: url(./assets/mobile-image.pngg);
+  }
+  .bg-\[url\(assets\/mobile-image\.png\)\] {
+    background-image: url(assets/mobile-image.png);
+  }
+  .bg-\[url\(assets\/mobile-image\.pngg\)\] {
+    background-image: url(assets/mobile-image.pngg);
+  }
+  .bg-\[url\(assets\\mobile-image\.pngg\)\] {
+    background-image: url(assets\mobile-image.pngg);
+  }
   .to-100\% {
     --tw-gradient-to-position: 100%;
   }
@@ -1087,6 +1099,16 @@
   .sm\:bg-\[url\(\.\/assets\/jungle\.png\)\] {
     @media (width >= 40rem) {
       background-image: url(./assets/jungle.png);
+    }
+  }
+  .sm\:bg-\[url\(assets\/jungle\.png\)\] {
+    @media (width >= 40rem) {
+      background-image: url(assets/jungle.png);
+    }
+  }
+  .sm\:bg-\[url\(assets\\jungle\.png\)\] {
+    @media (width >= 40rem) {
+      background-image: url(assets\jungle.png);
     }
   }
   .sm\:px-0 {
