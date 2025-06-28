@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+    --color-light-1: #faf5e8;
+    --color-light-2: #faeacd;
+    --color-sky-light: #f2f2f2;
+    --color-gray-light-1: #55574b;
+    --color-yellow-c: #ffcc00;
+    --color-green-c: #003300;
+    --color-sk-blue: #4fb0ae;
+    --color-ligh-black: #1f1e1d;
+
+    --font-value-serif: 'ValueSerif', Georgia, serif;
+    --font-poppins: 'Poppins';
+
+    --animate-lr: lr 1s ease-in-out;
+    --animate-rl: rl 1s ease-out;
+    --animate-down: down 1s ease-in-OUT;
+    --animate-up: up 1s ease-out;
+
+    @keyframes lr {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes rl {
+        0% {
+            width: 100%;
+        }
+
+        100% {
+            width: 0%;
+        }
+    }
+
+    @keyframes down {
+        0% {
+            max-height: 0vh;
+        }
+
+        100% {
+            max-height: 100vh;
+        }
+    }
+
+    @keyframes up {
+        0% {
+            max-height: 100vh;
+        }
+
+        100% {
+            max-height: 0vh;
+        }
+    }
+
+}
+
+@font-face {
+    font-family: 'ValueSerif', 'Georgia';
+    src: url("../fonts/value-serif.ttf");
+    font-weight: 400;
+}
