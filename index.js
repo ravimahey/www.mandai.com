@@ -1,4 +1,4 @@
-# TEST 14
+# TEST 15
 const addAnimation = (ids, inAni, outAni) => {
 	const element_ids = ids.split(" ");
 	console.log(element_ids);
